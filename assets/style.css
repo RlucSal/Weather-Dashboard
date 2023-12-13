@@ -1,7 +1,6 @@
 body {
     background-color: whitesmoke;
 }
-
 #search-button {
     width: 100%;
     border-radius: 20px;
@@ -10,25 +9,30 @@ body {
     color: whitesmoke;
     margin-top: 5px;
 }
-
 #main-row {
     border: 3px solid black;
 
 }
-
 #today {
     border: 1px solid black;
 }
-
-#today h3,
-h6 {
+#today h3,h6 {
     margin-left: 8px;
 }
-
-
 #cards .col {
     flex: 0 0 20%;
     max-width: 20%;
+
+
+}
+#history ul, #history li {
+    margin-top: 10px;
+    background-color: goldenrod;
+    color: whitesmoke;
+    list-style-type: none;
+    text-align: center;
+    padding: 3px;
+
 }
 
 @media (max-width: 650px) {/* Small and medium devices (phones and tablets) */
