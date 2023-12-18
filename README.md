@@ -1,16 +1,23 @@
-# Weather-Dashboard
- App that allows users to see the weather forecast for cities of their choosing.
- # Your Task
+# # Weather-Dashboard
 
-Server APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+## Description 
 
-Use the [5 Day Weather Forecast](https://openweathermap.org/forecast5) to retrieve weather data for cities. The link should take you to a guide on how to use the 5 Day Forecast API. You will need to register for an API key in order to use this API. After registering for a new API key, you may need to wait up to 2 hours for that API key to activate.
+### Develop a Weather Forecast Dashboard that satisties the following  acceptable criteria:
 
-The base URL for your API calls should look like the following: `https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}`.
-
-**Hint**: Using the 5 Day Weather Forecast API, you'll notice that you will need to pass in coordinates instead of just a city name. Using the OpenWeatherMap APIs, how could we retrieve geographical coordinates given a city name?
-
-You will use `localStorage` to store any persistent data. For more information on how to work with the OpenWeather API, refer to the [Full-Stack Blog on how to use API keys](https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys).
+1.   When a user searches for a city they are presented with current and future conditions for that city and that city is added to the search history.
+2.   When a user views the current weather conditions for that city they are presented with:
+    * The city name
+    * The date
+    * An icon representation of weather conditions
+    * The temperature
+    * The humidity
+    * The wind speed
+3.  When a user view future weather conditions for that city they are presented with a 5-day forecast that displays:
+    * The date
+    * An icon representation of weather conditions
+    * The temperature
+    * The humidity
+4.  When a user click on a city in the search history they are again presented with current and future conditions for that city
 
 ## User Story
 
@@ -20,91 +27,106 @@ I WANT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly
 ```
 
-## Acceptance Criteria
+### Motivation 
 
-* Create a weather dashboard with form inputs.
-  * When a user searches for a city they are presented with current and future conditions for that city and that city is added to the search history
-  * When a user views the current weather conditions for that city they are presented with:
-    * The city name
-    * The date
-    * An icon representation of weather conditions
-    * The temperature
-    * The humidity
-    * The wind speed
-  * When a user view future weather conditions for that city they are presented with a 5-day forecast that displays:
-    * The date
-    * An icon representation of weather conditions
-    * The temperature
-    * The humidity
-  * When a user click on a city in the search history they are again presented with current and future conditions for that city
+1. Personal Utility:
+   Stay Informed: A weather dashboard allows you to stay updated on current and forecasted weather conditions in your area or any location of interest.
+   Plan Activities: It helps you plan your daily activities, events, or trips based on the weather forecast, ensuring that you are prepared for different weather scenarios.
+   
+2. Learning Opportunity:
+   Skill Development: Building a weather dashboard provides an excellent opportunity to enhance your programming skills, especially if you are using technologies like web development (HTML, CSS, JavaScript) or data visualization tools.
+   API Integration: Working with weather APIs and integrating them into your dashboard can be a valuable learning experience.
+   
+3. Problem Solving:
+   Real-world Application: Developing a weather dashboard involves solving real-world problems related to data retrieval, processing, and presentation. It's a practical way to apply your problem-solving skills.
+   
+4. Customization:
+   Tailored Information: You have the flexibility to customize the dashboard according to your preferences, displaying the weather parameters that matter most to you.
+   
+5. Portfolio Enhancement:
+   Showcase Your Skills: Completing a weather dashboard project can serve as a tangible example of your coding and design abilities. It can be a valuable addition to your portfolio when showcasing your work to potential employers or clients.
+   
+7. Community Contribution:
+   Open Source: If you're open to it, you can contribute your weather dashboard project to open-source communities. This not only benefits others but also allows you to collaborate with like-minded individuals.
+   
+9. Visual Appeal:
+   Design and Aesthetics: Creating an aesthetically pleasing dashboard can be a fun and creative aspect of the project. You can experiment with different layouts, color schemes, and visual elements.
+   
+## Usage
 
-## Mock-Up
+1. Installation:
+  Download and install the weather dashboard application from the respective app store (e.g., Google Play Store, Apple App Store) or from the developer's website.
 
-The following image shows the web application's appearance and functionality:
+2. Open the Application:
+   Launch the application on your device by tapping its icon.
+   
+3. Location Setup:
+   Manually enter the location you want to check the weather for.
+   
+4. Dashboard Overview:
+   Explore the main dashboard, which typically displays the current weather conditions for your selected location.
+   
+5. Daily Forecasts:
+  Check the hourly and daily forecasts to plan your day or week.
+  View details such as temperature, precipitation, wind speed, and humidity.
 
-![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for London.](./assets/10-server-side-apis-challenge-demo.png)
+### Screenshot
+![image](https://github.com/RlucSal/Weather-Dashboard/assets/145674108/a96a161b-4ca8-4714-b4e5-a7de9f405870)
+![image](https://github.com/RlucSal/Weather-Dashboard/assets/145674108/37d26800-9b95-4968-ba6d-40afe8067b8d)
+![image](https://github.com/RlucSal/Weather-Dashboard/assets/145674108/526883dc-876e-44eb-b492-5300d5ed5fb1)
 
-## Grading Requirements
+### Link to deployed application
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+https://rlucsal.github.io/Weather-Dashboard/
 
-This Challenge is graded based on the following criteria:
+## Credits
 
-### Technical Acceptance Criteria: 40%
+https://openai.com/blog/chatgpt
+https://getbootstrap.com/docs/5.0
+https://www.w3schools.com
+https://www.w3schools.com/Day.js_intro.asp
+https://stackoverflow.com/
+https://code.visualstudio.com/
+https://git-scm.com/
+https://github.com/
 
-* Satisfies all of the above acceptance criteria plus the following:
+## Licence
+This project is licensed under the [MIT License] - see LICENSE file for details.
 
-  * Uses the OpenWeather API to retrieve weather data.
+## Features
 
-  * Uses `localStorage` to store persistent data.
+## How to contribute
+### Reporting Issues
+If you encounter a bug or have a suggestion for improvement, please open an issue on our Issue Tracker. When reporting issues, please provide as much detail as possible, including steps to reproduce the problem, your environment, and any relevant code snippets or screenshots.
 
-### Deployment: 32%
+### Feature Requests
+If you have an idea for a new feature or enhancement, you can also open an issue on our Issue Tracker to discuss it.
+   
+### Code of Conduct
+We have a Code of Conduct that all contributors are expected to follow. Please review it before participating in this project to ensure a positive and respectful environment for everyone.
 
-* Application deployed at live URL.
+### Contributor License Agreement
+Before your contributions can be merged, is required that you sign our Contributor License Agreement (CLA). This agreement ensures that the project's codebase remains open-source and that you grant necessary rights for your contributions to be included.
 
-* Application loads with no errors.
 
-* Application GitHub URL submitted.
 
-* GitHub repository that contains application code.
 
-### Application Quality: 15%
 
-* Application user experience is intuitive and easy to navigate.
 
-* Application user interface style is clean and polished.
 
-* Application resembles the mock-up functionality provided in the homework instructions.
 
-### Repository Quality: 13%
 
-* Repository has a unique name.
 
-* Repository follows best practices for file structure and naming conventions.
 
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
 
-* Repository contains multiple descriptive commit messages.
 
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
 
-## Review
 
-You are required to submit BOTH of the following for review:
 
-* The URL of the functional, deployed application.
 
-* The URL of the GitHub repository. Give the repository a unique name and include a readme describing the project.
 
----
 
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+
+
 

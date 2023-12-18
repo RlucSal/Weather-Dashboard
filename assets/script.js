@@ -93,6 +93,7 @@ function createWeatherCard(cityName, weatherItem, isToday) {
     }
 }
 function addToHistory(city) {
+
     saveToLocalStorage(city);
 
     const listItem = document.createElement("li");
@@ -119,3 +120,5 @@ document.addEventListener("DOMContentLoaded", function () {
         addToHistory(city);
     });
 });
+
+
