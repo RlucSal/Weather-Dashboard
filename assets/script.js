@@ -93,8 +93,29 @@ function createWeatherCard(cityName, weatherItem, isToday) {
     }
 }
 function addToHistory(city) {
-    // Create a new list item for the history list
+    saveToLocalStorage(city);
+
     const listItem = document.createElement("li");
-    listItem.textContent = city;
+    const button = document.createElement("button");
+    button.textContent = city;
+    button.classList.add("history-button");
+    button.addEventListener("click", function () {
+        makeApiCall(city);
+    });
+
+    listItem.appendChild(button);
     historyList.appendChild(listItem);
 }
+
+function saveToLocalStorage(city) {
+    const existingCities = JSON.parse(localStorage.getItem("cities")) || [];
+    existingCities.push(city);
+    localStorage.setItem("cities", JSON.stringify(existingCities));
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    const savedCities = JSON.parse(localStorage.getItem("cities")) || [];
+    savedCities.forEach(function (city) {
+        addToHistory(city);
+    });
+});
